@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MARYFLO  - PAPAN BUNGA</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    .tabs {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      gap: 10px;
+      margin-bottom: 30px;
+    }
+
+    .tabs .tab {
+      padding: 10px 20px;
+      cursor: pointer;
+      background-color: #f1f1f1;
+      border-radius: 5px;
+    }
+
+    .tabs .tab.active {
+      background-color: #007bff;
+      color: white;
+    }
+
+    .tab-content > div {
+      display: none;
+    }
+
+    .tab-content > div.active {
+      display: block;
+    }
+
+    .product-item {
+      border: 1px solid #ddd;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .product-style img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .add-to-cart {
+      margin-top: 10px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .add-to-cart:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+
+<section id="buku-populer" class="bookshelf py-5 my-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+
+        <div class="section-header text-center mb-4">
+          <div class="title">
+            <span>Featured Flower Board</span>
+          </div>
+          <h2 class="section-title">MARYFLO</h2>
+        </div>
+
+        <ul class="tabs justify-content-center">
+          <li data-tab-target="#All Genre" class="active tab">All Genre</li>
+          <li data-tab-target="#bisnis" class="tab">Flower Board</li>
+          <li data-tab-target="#teknologi" class="tab">Flower Sign Box</li>
+          <li data-tab-target="#romantis" class="tab">Mini Flower</li>
+          <li data-tab-target="#petualangan" class="tab">Bouquet Custom</li>
+        </ul>
+
+        <div class="tab-content">
+          <!-- Tab All Genre -->
+          <div id="All Genre" data-tab-content class="active">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="product-item">
+                  <figure class="product-style">
+                    <img src="FrameFlower.jpg" alt="Fancy Flower" />
+                    <figcaption>
+                      <h3>Fancy Flower</h3>
+                      <span>graceful, and luxurious</span>
+                      <div class="item-price">Rp550.000</div>
+                      <button type="button" class="add-to-cart">Tambah ke Keranjang</button>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="product-item">
+                  <figure class="product-style">
+                    <img src="BookFlower.jpg" alt="Book Flower" />
+                    <figcaption>
+                      <h3>Book Flower</h3>
+                      <span>Modern,and professional</span>
+                      <div class="item-price">Rp550.000</div>
+                      <button type="button" class="add-to-cart">Tambah ke Keranjang</button>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Tab Bisnis -->
+          <div id="bisnis" data-tab-content>
+            <div class="row">
+              <div class="col-md-3">
+                <div class="product-item">
+                  <figure class="product-style">
+                    <img src="images/tab-item2.jpg" alt="Buku Pencerahan Damai" />
+                    <figcaption>
+                      <h3>Pencerahan Damai</h3>
+                      <span>Marmik Lama</span>
+                      <div class="item-price">Rp 65.000</div>
+                      <button type="button" class="add-to-cart">Tambah ke Keranjang</button>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab Teknologi -->
+          <div id="teknologi" data-tab-content>
+            <div class="row">
+              <div class="col-md-3">
+                <div class="product-item">
+                  <figure class="product-style">
+                    <img src="images/tab-item3.jpg" alt="Buku Inovasi Digital" />
+                    <figcaption>
+                      <h3>Inovasi Digital</h3>
+                      <span>Sinta Dewi</span>
+                      <div class="item-price">Rp 80.000</div>
+                      <button type="button" class="add-to-cart">Tambah ke Keranjang</button>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab Romantis -->
+          <div id="romantis" data-tab-content>
+            <div class="row">
+              <div class="col-md-3">
+                <div class="product-item">
+                  <figure class="product-style">
+                    <img src="images/tab-item4.jpg" alt="Buku Pelukan Senja" />
+                    <figcaption>
+                      <h3>Pelukan Senja</h3>
+                      <span>Larasati</span>
+                      <div class="item-price">Rp 50.000</div>
+                      <button type="button" class="add-to-cart">Tambah ke Keranjang</button>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab Petualangan -->
+          <div id="petualangan" data-tab-content>
+            <div class="row">
+              <div class="col-md-3">
+                <div class="product-item">
+                  <figure class="product-style">
+                    <img src="images/tab-item5.jpg" alt="Buku Jelajah Nusantara" />
+                    <figcaption>
+                      <h3>Jelajah Nusantara</h3>
+                      <span>Rian Prasetyo</span>
+                      <div class="item-price">Rp 70.000</div>
+                      <button type="button" class="add-to-cart">Tambah ke Keranjang</button>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab Fiksi -->
+          <div id="fiksi" data-tab-content>
+            <div class="row">
+              <div class="col-md-3">
+                <div class="product-item">
+                  <figure class="product-style">
+                    <img src="images/tab-item6.jpg" alt="Buku Bayangan Hitam" />
+                    <figcaption>
+                      <h3>Bayangan Hitam</h3>
+                      <span>Dwi Lestari</span>
+                      <div class="item-price">Rp 55.000</div>
+                      <button type="button" class="add-to-cart">Tambah ke Keranjang</button>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="text-center py-4">
+  <p>&copy; 2025 Toko Buku Populer. Semua hak dilindungi.</p>
+</footer>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const tabs = document.querySelectorAll(".tab");
+    const tabContents = document.querySelectorAll("[data-tab-content]");
+
+    tabs.forEach(tab => {
+      tab.addEventListener("click", () => {
+        tabs.forEach(t => t.classList.remove("active"));
+        tabContents.forEach(content => content.classList.remove("active"));
+
+        tab.classList.add("active");
+        const target = document.querySelector(tab.dataset.tabTarget);
+        target.classList.add("active");
+      });
+    });
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
