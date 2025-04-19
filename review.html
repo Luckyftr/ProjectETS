@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Review Pelanggan</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css">
+  <style>
+    body {
+      background-color: #fdf7f0;
+      font-family: 'Playfair Display', serif;
+      padding: 2rem;
+    }
+
+    h1 {
+      color: #daa556;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .table-container {
+      background-color: #fff;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      padding: 2rem;
+    }
+
+    .emoji {
+      font-size: 1.2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container table-container">
+    <h1><span class="emoji">📝</span> Review Pelanggan</h1>
+
+    <table id="reviewTable" class="table table-hover text-center align-middle">
+      <thead>
+        <tr>
+          <th>No</th>
+          <th>Nama Pelanggan</th>
+          <th>Umur</th>
+          <th>Review</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>Andini Prameswari</td><td>29</td><td>Papan bunganya elegan banget! Pengiriman juga cepat. Recommended!</td></tr>
+        <tr><td>2</td><td>Fajar Nugraha</td><td>35</td><td>Bunganya fresh, rapi, dan sangat cocok untuk acara kantor kami.</td></tr>
+        <tr><td>3</td><td>Clara Setyaningrum</td><td>27</td><td>Customer service-nya ramah dan sangat membantu. Thank you!</td></tr>
+        <tr><td>4</td><td>Yoga Prasetyo</td><td>33</td><td>Harga sesuai kualitas. Sangat puas dengan hasilnya!</td></tr>
+        <tr><td>5</td><td>Vina Maharani</td><td>25</td><td>Teman saya sangat terharu saat menerima papan bunganya.</td></tr>
+        <tr><td>6</td><td>Riko Hidayat</td><td>38</td><td>Desainnya modern dan elegan. Cocok untuk grand opening!</td></tr>
+        <tr><td>7</td><td>Dea Ayu Kartika</td><td>31</td><td>Saya suka pilihan bunga dan kombinasi warnanya. Cantik banget!</td></tr>
+        <tr><td>8</td><td>Kevin Alamsyah</td><td>40</td><td>Sangat profesional dari awal sampai pengiriman. Mantap!</td></tr>
+        <tr><td>9</td><td>Mega Rahmawati</td><td>24</td><td>Ukurannya besar dan mewah. Semua orang notice papan bunganya!</td></tr>
+        <tr><td>10</td><td>Anton Wicaksono</td><td>36</td><td>Bisa custom desain sesuai keinginan. Proses mudah!</td></tr>
+        <tr><td>11</td><td>Laras Sari</td><td>32</td><td>Kualitas papan bunga sangat memuaskan. Akan order lagi!</td></tr>
+        <tr><td>12</td><td>Wawan Kurniawan</td><td>45</td><td>Pelayanan cepat dan ramah, hasil sangat bagus.</td></tr>
+        <tr><td>13</td><td>Dina Nurhaliza</td><td>26</td><td>Tampilan papan bunga sangat menarik dan elegan.</td></tr>
+        <tr><td>14</td><td>Tommy Suryanto</td><td>37</td><td>Proses pemesanan mudah dan hasil memuaskan.</td></tr>
+        <tr><td>15</td><td>Melati Ardina</td><td>29</td><td>Banyak pilihan desain papan bunga yang keren-keren!</td></tr>
+        <tr><td>16</td><td>Sandy Putra</td><td>34</td><td>Saya rekomendasikan ke teman-teman, keren banget!</td></tr>
+        <tr><td>17</td><td>Yuni Kartika</td><td>27</td><td>Papannya rapi dan pengiriman tepat waktu. Good job!</td></tr>
+        <tr><td>18</td><td>Hendri Gunawan</td><td>39</td><td>Desain bisa disesuaikan dengan kebutuhan. Fleksibel!</td></tr>
+        <tr><td>19</td><td>Lina Meilani</td><td>31</td><td>Pesanan sesuai ekspektasi. Terima kasih tim papan bunga!</td></tr>
+        <tr><td>20</td><td>Arief Suhendar</td><td>42</td><td>Harga terjangkau dan kualitas tetap premium!</td></tr>
+        <tr><td>21</td><td>Indah Lestari</td><td>33</td><td>Setiap detail papan bunga dikerjakan dengan hati.</td></tr>
+        <tr><td>22</td><td>Bayu Maulana</td><td>36</td><td>Website ini sangat membantu untuk pemesanan cepat.</td></tr>
+        <tr><td>23</td><td>Tari Amelia</td><td>24</td><td>Saya suka banget dengan pilihan template desainnya!</td></tr>
+        <tr><td>24</td><td>Rina Oktaviani</td><td>30</td><td>Papannya elegan dan cocok untuk berbagai acara.</td></tr>
+        <tr><td>25</td><td>Alvin Hermawan</td><td>28</td><td>Timnya komunikatif dan cepat tanggap. Terbaik!</td></tr>
+        <tr><td>26</td><td>Nana Zulfa</td><td>35</td><td>Warna bunganya cerah dan segar banget!</td></tr>
+        <tr><td>27</td><td>Fikri Ramadhan</td><td>38</td><td>Respon cepat dan pengiriman sesuai jadwal. Recommended!</td></tr>
+        <tr><td>28</td><td>Siska Mulyani</td><td>32</td><td>Acara kami jadi makin meriah dengan papan bunga ini.</td></tr>
+        <tr><td>29</td><td>Rizal Bahar</td><td>29</td><td>Harganya pas di kantong dan hasilnya memukau.</td></tr>
+        <tr><td>30</td><td>Ayu Puspita</td><td>26</td><td>Senang bisa custom ucapan dan desainnya!</td></tr>
+        <tr><td>31</td><td>Joko Pranoto</td><td>41</td><td>Selalu puas pesan papan bunga di sini. Langganan!</td></tr>
+        <tr><td>32</td><td>Sabrina Melati</td><td>27</td><td>Banyak pilihan desain kreatif dan kekinian.</td></tr>
+        <tr><td>33</td><td>Rahmat Gunawan</td><td>35</td><td>Servisnya memuaskan, cocok buat acara keluarga.</td></tr>
+        <tr><td>34</td><td>Gita Anjani</td><td>28</td><td>Website-nya gampang diakses dan user friendly.</td></tr>
+        <tr><td>35</td><td>Tomy Lazuardi</td><td>39</td><td>Pesan hari ini, besok sudah sampai. Hebat!</td></tr>
+        <tr><td>36</td><td>Wenny Arisanti</td><td>34</td><td>Timnya sigap dan hasil papan sesuai harapan.</td></tr>
+        <tr><td>37</td><td>Damar Putra</td><td>37</td><td>Bunganya segar dan tidak layu. Keren banget!</td></tr>
+        <tr><td>38</td><td>Ani Rachmawati</td><td>30</td><td>Papan bunga terlihat eksklusif dan elegan.</td></tr>
+        <tr><td>39</td><td>Fadil Rosyid</td><td>43</td><td>Tepat waktu dan berkualitas, top deh!</td></tr>
+        <tr><td>40</td><td>Maya Indriani</td><td>29</td><td>Proses pemesanan sangat praktis dan cepat.</td></tr>
+        <tr><td>41</td><td>Hendra Yusuf</td><td>31</td><td>Design-nya bikin acara makin spesial!</td></tr>
+        <tr><td>42</td><td>Yuliana Putri</td><td>33</td><td>Ucapan di papan bunga bisa custom, suka!</td></tr>
+        <tr><td>43</td><td>Dedi Suryana</td><td>44</td><td>Saya sangat puas dengan hasil papan bunganya.</td></tr>
+        <tr><td>44</td><td>Rika Febrianti</td><td>28</td><td>Proses cepat, hasil rapi. Makasih!</td></tr>
+        <tr><td>45</td><td>Andra Saputra</td><td>36</td><td>Website-nya mudah digunakan dan responsif.</td></tr>
+        <tr><td>46</td><td>Wulan Safitri</td><td>29</td><td>Ukurannya pas dan terlihat sangat profesional.</td></tr>
+        <tr><td>47</td><td>Mahesa Ananta</td><td>34</td><td>Banyak promo menarik. Cocok untuk pemesanan rutin.</td></tr>
+        <tr><td>48</td><td>Tasya Nirmala</td><td>26</td><td>Pengiriman cepat dan kualitasnya oke.</td></tr>
+        <tr><td>49</td><td>Ilham Septian</td><td>30</td><td>Review saya: sangat direkomendasikan!</td></tr>
+        <tr><td>50</td><td>Sofia Mardiana</td><td>28</td><td>Saya puas banget! Akan order lagi untuk event selanjutnya.</td></tr>
+    </tbody>
+</table>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
+<script>
+$(document).ready(function() {
+  $('#reviewTable').DataTable();
+});
+</script>
+
+</body>
+</html>
