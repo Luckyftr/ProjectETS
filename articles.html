@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Jenis Bunga untuk Karangan</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+      background-color: #f6f6f6;
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 50px auto;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #003049;
+      margin-bottom: 40px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .card-body {
+      padding: 15px 20px;
+    }
+    .card-body h3 {
+      margin: 0;
+      color: #264653;
+      font-size: 1.2rem;
+    }
+    .preview {
+      color: #555;
+      margin: 10px 0;
+    }
+    .detail {
+      display: none;
+      color: #333;
+      line-height: 1.5;
+    }
+    .card-body button {
+      background-color: #003049;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    .card-body button:hover {
+      background-color: #264653;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Jenis-Jenis Bunga di Toko Kami</h1>
+    <div class="grid">
+
+      <!-- Template untuk satu bunga (ulangi 10x) -->
+      <div class="card">
+        <img src="mawar.jpg" alt="Bunga Mawar">
+        <div class="card-body">
+          <h3>Mawar</h3>
+          <p class="preview">Bunga cinta dan kasih sayang...</p>
+          <div class="detail">Bunga mawar sangat populer untuk menyampaikan cinta dan kasih sayang. Cocok untuk momen romantis maupun perayaan spesial.</div>
+          <button onclick="toggleDetail(this)">Lihat Selengkapnya</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="lily.jpg" alt="Bunga Lily">
+        <div class="card-body">
+          <h3>Lily</h3>
+          <p class="preview">Lambang kesucian dan damai...</p>
+          <div class="detail">Lily melambangkan kesucian dan kedamaian. Umumnya digunakan dalam acara pernikahan atau ucapan belasungkawa.</div>
+          <button onclick="toggleDetail(this)">Lihat Selengkapnya</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="krisan.jpg" alt="Bunga Krisan">
+        <div class="card-body">
+          <h3>Krisan</h3>
+          <p class="preview">Bunga cerah dan awet...</p>
+          <div class="detail">Krisan dikenal karena warna cerah dan tahan lama. Simbol kebahagiaan dan penghargaan.</div>
+          <button onclick="toggleDetail(this)">Lihat Selengkapnya</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="anggrek.jpg" alt="Bunga Anggrek">
+        <div class="card-body">
+          <h3>Anggrek</h3>
+          <p class="preview">Simbol keanggunan dan mewah...</p>
+          <div class="detail">Anggrek menampilkan kesan mewah dan elegan. Ideal untuk hadiah profesional atau acara formal.</div>
+          <button onclick="toggleDetail(this)">Lihat Selengkapnya</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="anyelir.jpg" alt="Bunga Anyelir">
+        <div class="card-body">
+          <h3>Anyelir</h3>
+          <p class="preview">Warna penuh arti...</p>
+          <div class="detail">Makna bunga anyelir bervariasi tergantung warna. Merah untuk kekaguman, putih untuk cinta murni.</div>
+          <button onclick="toggleDetail(this)">Lihat Selengkapnya</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="matahari.jpg" alt="Bunga Matahari">
+        <div class="card-body">
+          <h3>Matahari</h3>
+          <p class="preview">Keceriaan dan semangat...</p>
+          <div class="detail">Simbol keceriaan, semangat, dan harapan. Cocok untuk memberi semangat kepada orang tersayang.</div>
+          <button onclick="toggleDetail(this)">Lihat Selengkapnya</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="tulip.jpg" alt="Bunga Tulip">
+        <div class="card-body">
+          <h3>Tulip</h3>
+          <p class="preview">Simpel dan elegan...</p>
+          <div class="detail">Tulip dikenal dengan bentuknya yang sederhana namun elegan. Warna merah menandakan cinta yang mendalam.</div>
+          <button onclick="toggleDetail(this)">Lihat Selengkapnya</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="melati.jpg" alt="Bunga Melati">
+        <div class="card-body">
+          <h3>Melati</h3>
+          <p class="preview">Simbol kemurnian Indonesia...</p>
+          <div class="detail">Bunga melati adalah simbol kemurnian dan ketulusan. Sering dipakai dalam tradisi pernikahan Indonesia.</div>
+          <button onclick="toggleDetail(this)">Lihat Selengkapnya</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="garbera.jpg" alt="Bunga Gerbera">
+        <div class="card-body">
+          <h3>Gerbera</h3>
+          <p class="preview">Warna cerah dan ceria...</p>
+          <div class="detail">Gerbera tampil dengan warna cerah dan penuh energi positif. Cocok untuk hadiah ulang tahun atau kelulusan.</div>
+          <button onclick="toggleDetail(this)">Lihat Selengkapnya</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="peony.jpg" alt="Bunga Peony">
+        <div class="card-body">
+          <h3>Peony</h3>
+          <p class="preview">Lambang kemakmuran dan cinta...</p>
+          <div class="detail">Peony melambangkan kemakmuran dan keberuntungan. Sering digunakan dalam pernikahan dan acara kebahagiaan.</div>
+          <button onclick="toggleDetail(this)">Lihat Selengkapnya</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    function toggleDetail(btn) {
+      const detail = btn.previousElementSibling;
+      const isVisible = detail.style.display === 'block';
+      detail.style.display = isVisible ? 'none' : 'block';
+      btn.innerText = isVisible ? 'Lihat Selengkapnya' : 'Sembunyikan';
+    }
+  </script>
+</body>
+</html>
